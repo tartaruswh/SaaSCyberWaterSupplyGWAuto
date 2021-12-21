@@ -1,0 +1,59 @@
+# 账户登录的等价类与非等价类测试数据
+
+#loginDataKeys:表示可以登录需要输入的参数名称
+loginDataKeys:
+  -
+    - tenant
+    - user
+    - password
+
+#loginDataValueFalse：表示测试登录数据的异常等价类
+
+loginDatasValuesFalse:
+  -
+    - " "
+    - gwtest
+    - Bewg1234
+  -
+    - gwtest
+    - " "
+    - Bewg1234
+  -
+    - gwtest
+    - gwtest
+    - " "
+  -
+    - " "
+    - " "
+    - " "
+  -
+    - "#$@#"
+    - gwtest
+    - Bewg1234
+  -
+    - gwtest
+    - "##$#"
+    - Bewg1234
+  -
+    - gwtest
+    - gwtest
+    - "#$#@$"
+  -
+    - gatest
+    - gwtest
+    - Bewg1234
+  -
+    - gwtest
+    - gatest
+    - Bewg1234
+  -
+    - gwtest
+    - gwtest
+    - Bawg1234
+#loginDatasValuesTrue：表示可以正常登录的数据
+loginDatasValuesTrue:
+  -
+    - gwtest
+    - gwtest
+    - Bewg1234
+
